@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+  
+}
+
+body{
+    background-image:url(fondo3.jpg);
+    background-size: cover;
+    background-color: #A5410F;
+    color:#A5410F; 
+    
+ 
+}
+.bodyDatos{
+    height: 100vh;
+    background-color:#A5410F;
+    background-size: cover;
+    background-position: center;
+
+    .main{
+         
+        .seccionDatos{
+            width: 100%;
+            margin:auto;
+            border-radius: 5px;
+            padding: 10px 10px;
+            display:grid;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size:1.2rem;
+            .datos{
+                font-size: 2rem;
+                font-weight: 500;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            
+            form{
+                width: 100%;
+                padding:40px; 
+                input:not(.botonRegistrar),select{
+                    width: 100%;
+                    margin-bottom: 15px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1rem;
+                    border-radius: 12px;
+                    border: 2px solid #A5410F;
+                    background-color: #F0A967;
+                    outline: none;
+                    color:black;
+                
+                }    
+                .botonRegistrar{
+                    width: 50%;
+                    margin-left: 110px;
+                    background-color:darkorange;
+                    border: 1px solid #A5410F;
+                    color: #A5410F;
+                    padding: 1rem 1rem;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    margin-bottom: 0px;
+                }
+            }    
+            
+           
+        }
+   
+    }    
+
+}
+
+
+
+/*media querys para mobile 
+@media (max-width: 1200px) {
+    .bodyDatos{
+        .headerRegistrarse{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+            .seccionRegistrarse{
+                width: 95%;
+                padding: 10px 10px;
+                .tituloDatos{
+                    font-size: 2rem;
+                }
+               form{
+                width: 100%;
+                text-align: center;
+               
+                input:not(.botonRegistrar),select{
+                    width: 80%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                
+                .botonRegistraar{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 70%;
+                    padding: 0.8rem 0.8rem;
+                    font-size: 0.8rem;
+                }
+                }
+            }
+               
+               
+            
+        }
+    }
+
+}
