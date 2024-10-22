@@ -28,7 +28,6 @@ body{
             border-radius: 5px;
             padding: 10px 10px;
             display:grid;
-            flex-direction:column;
             justify-content: center;
             align-items: center;
             height: 90vh;
@@ -47,13 +46,13 @@ body{
                     width: 100%;
                     margin-bottom: 15px;
                     height: 40px;
-                    padding: 0px 20px;
+                    padding: 0px 20px;                                                                                                                        
                     font-size: 1rem;
                     border-radius: 12px;
                     border: 2px solid #A5410F;
-                    background-color: #F0A967;
+                    background-color: white;
                     outline: none;
-                    color:black;
+                    color: #000000;
                 
                 }    
                 .botonRegistrar{
@@ -61,12 +60,20 @@ body{
                     margin-left: 110px;
                     background-color:darkorange;
                     border: 1px solid #A5410F;
-                    color: #A5410F;
+                    color: #000000; 
                     padding: 1rem 1rem;
                     border-radius: 20px;
                     font-size: 1rem;
                     font-weight: 300;
                     margin-bottom: 0px;
+                }
+                .warnings {
+                    font-size: small;
+                    width: 400px;
+                    text-align: center;
+                    margin: auto;
+                    color: black;
+                    padding-top: 20px;
                 }
             }    
             

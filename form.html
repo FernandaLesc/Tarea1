@@ -6,40 +6,47 @@
     <title>Formulario de registro </title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> <!--cambiar tipografia-->
+    
 </head>
 <body class="bodyDatos">
     <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="700" class="seccionDatos">
             
-            <form action="" method="get">
+            <form action="" method="post" id="form" name="form">
                 <h2 class="datos">Complete los siguientes datos</h2>
                 <div>
-                    <input type="text" placeholder="Nombre" id="Nombre" name="Nombre">
-                </div>
-                <div>
-                    <input type="text" placeholder="Apellido" id="Apellido" name="Apellido">
-                </div>
-                <div>
-                    <input type="email" placeholder="Email" id="user-email" name="userEmail">
+                    <label for="nombre"></label>
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
                     
                 </div>
-              
                 <div>
-                    <input type="date" value="2006-06-01">
+                    <label for="apellido"></label>
+                    <input  type="text" placeholder="Apellido" id="apellido" name="apellido">
+                   
                 </div>
                 <div>
-                    <input type="text" placeholder="Pais de Residencia" id="pais" name="Pais">
+                    <label for="userEmail"></label>
+                    <input type="email" placeholder="Correo electronico" id="userEmail" name="userEmail">
+                    
+                </div>   
+                <div>
+                    <label for="date"></label>
+                    <input type="date" id="date" value="DD/MM/AAAA" required>
+                </div>
+                <div>
+                    <label for="pais"></label>
+                    <input type="text" placeholder="Pais de Residencia" id="pais" name="pais" >
+                    
                 </div>
                 <div>
                     <br><input class="botonRegistrar" type="submit" value="Registrarme">
+                    <p class="warnings" id="warnings"></p>
                 </div>
             </form>
         </section>
     </main>
+    <script src="form.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="form.js"> 
-    </script>
     <script>
         AOS.init();
     </script>
